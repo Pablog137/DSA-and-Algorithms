@@ -70,3 +70,27 @@ def filter_list2(listX: list):
 # print(filter_list2([1, "a", "b", 0, 15]))
 # print(filter_list2([1, 2, "aasf", "1", "123", 123]))
 # print(filter_list2([]))
+
+
+### ! EXERCISE 3
+
+"""Your task is to make a function that can take any non-negative integer as an argument and return it with its digits in descending order. Essentially, rearrange the digits to create the highest possible number.
+
+Examples:
+Input: 42145 Output: 54421
+Input: 145263 Output: 654321
+Input: 123456789 Output: 987654321
+
+"""
+
+# Solution 1
+
+
+def descending_order(num: int):
+    return int("".join(sorted(list(str(num)), reverse=True)))
+
+
+print(descending_order(42145))
+print(descending_order(145263))
+print(descending_order(123456789))
+print(descending_order(0))
