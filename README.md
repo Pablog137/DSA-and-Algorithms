@@ -5,6 +5,8 @@ This repo provides resources to learn everything from Big O Notation to common d
 - [Big O Notation](#big-o-notation)
 - [Pointers and references](#pointers-and-references)
 - [LinkedList](#linked-list)
+- [Doubly Linked list](#doubly-linked-list)
+- [Bibliography](#bibliography)
 
 <br>
 
@@ -286,3 +288,26 @@ A node in a linked list typically consists of two components:
 ### When should we use a linked list?
 
 The main cases where we prefer linked list over other data structures is due to ease of insertion and deletion in linked list. Without a linked list, if we want to insert or delete a value the list will have to reorder itself and move the require elements so it can be pretty expensive.
+
+
+## Doubly Linked List
+
+A doubly linked list is a data structure than consist of a set of nodes, each of which contains a data element and two links pointing to the next and previous node in the sequence. This allows for **more efficient operations** such as **transversals**, **insertions** and **deletions** because it can be done in both directions.
+
+![image](https://github.com/user-attachments/assets/62257293-c26b-4da9-8b3b-1f4a9adabade)
+
+
+A doubly linked list is represented using nodes that have three fields:
+
+1. Data
+2. A pointer to the next node
+3. A pointer to the previous node
+
+![image](https://github.com/user-attachments/assets/ed919dc8-7d2c-41b5-8fb2-1e58c712c0f5)
+
+<br>
+
+## Bibliography
+
+https://www.geeksforgeeks.org/
+
