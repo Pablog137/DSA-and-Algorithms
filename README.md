@@ -6,6 +6,7 @@ This repo provides resources to learn everything from Big O Notation to common d
 - [Pointers and references](#pointers-and-references)
 - [LinkedList](#linked-list)
 - [Doubly Linked list](#doubly-linked-list)
+- [Stack](#stack)
 - [Bibliography](#bibliography)
 
 <br>
@@ -304,6 +305,15 @@ A doubly linked list is represented using nodes that have three fields:
 3. A pointer to the previous node
 
 ![image](https://github.com/user-attachments/assets/ed919dc8-7d2c-41b5-8fb2-1e58c712c0f5)
+
+
+## Stack
+
+A stack i a linear data structure that stores items in a Last-In/First-Out (LIFO) or First-in/Last-Out (FILO) manner. In stack, a new element is added at one end and an element is removed from the end only. The insert and delete operations are often called push a pop.
+
+<img width="407" alt="stack" src="https://github.com/user-attachments/assets/9312acfe-ede8-48bf-a9b1-4746baab1f47">
+
+**Example** : In web browsers, when you navigate from one webpage to another, the previously visited pages are stored in a stack. Each time a new page is visited, it’s pushed onto the stack. If the “Back” button is pressed, then the current page is popped from the stack, revealing the last page that was visited.
 
 <br>
 
