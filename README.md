@@ -7,6 +7,7 @@ This repo provides resources to learn everything from Big O Notation to common d
 - [LinkedList](#linked-list)
 - [Doubly Linked list](#doubly-linked-list)
 - [Stack](#stack)
+- [Queue](#queue)
 - [Bibliography](#bibliography)
 
 <br>
@@ -314,6 +315,20 @@ A stack i a linear data structure that stores items in a Last-In/First-Out (LIFO
 <img width="407" alt="stack" src="https://github.com/user-attachments/assets/9312acfe-ede8-48bf-a9b1-4746baab1f47">
 
 **Example** : In web browsers, when you navigate from one webpage to another, the previously visited pages are stored in a stack. Each time a new page is visited, it’s pushed onto the stack. If the “Back” button is pressed, then the current page is popped from the stack, revealing the last page that was visited.
+
+
+## Queue
+
+Like a stack, the queue is a linear data structure that stores items in First In First Out (FIFO) manner. With a queue, the least recently added item is removed first. A good example of a queue is any queue of consumers for a resource where the consumer that came first is served first.
+
+<img width="946" alt="queue" src="https://github.com/user-attachments/assets/34633776-8a0e-4f86-a970-83b627559b89">
+
+Operations associated with queue are :
+
+- **Enqueue**: Adds an item to the queue. If the queue is full, then it is said to be an Overflow condition.
+- **Dequeue**: Removes an item from the queue. The items are popped in the same order in which they are pushed. If the queue is empty, then it is said to be an Underflow condition.
+- **Front:** Get the front item from queue.
+- **Rear:** Get the last item from queue.
 
 <br>
 
