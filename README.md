@@ -8,6 +8,7 @@ This repo provides resources to learn everything from Big O Notation to common d
 - [Doubly Linked list](#doubly-linked-list)
 - [Stack](#stack)
 - [Queue](#queue)
+- [Trees](#trees)
 - [Bibliography](#bibliography)
 
 <br>
@@ -331,6 +332,85 @@ Operations associated with queue are :
 - **Rear:** Get the last item from queue.
 
 <br>
+
+## Trees
+
+**A tree data structure is a hierarchical structure that is used to represent and organize data in a way that is easy to navigate and search**. It is a collection of nodes that are connected by edges and has a hierarchical relationship between the nodes.
+
+The topmost node of the tree is called the root, and the nodes below it are called the child nodes. Each node can have multiple child nodes, and these child nodes can also have their own child nodes, forming a recursive structure.
+
+![tree_data_structure](https://github.com/user-attachments/assets/95ae3834-7fc6-4add-ba97-c91cb1340d0a)
+
+### **Terminologies in Tree data structure**
+
+- **Parent node** : The node which is a predecessor of a node is called the parent node of that node. (B) is the parent node of (D,E)
+- **Child Node**: The node which is the immediate successor of a node is called the child node of that node. Examples: (D,E) are the child nodes of (B)
+- **Root Node**: A non-empty tree must contain exactly one root node. (A) is the root node of the tree.
+- **Leaf Node of External Node**: The nodes which do not have any child nodes are called leaf nodes (I,J,K,F,G,H) are the leaf nodes of the tree.
+- **Sibling**: Children of the same parent node are called siblings. (D,E) are called siblings.
+
+### Types of Tree Data Structure
+
+- **Binary tree** : In a binary tree, each node can have a maximum of two children linked to it.
+- **Ternary tree**: A Ternary tree is a tree data structure in which each node has at most three child nodes, usually distinguished as “left”, “mid” and “right”.
+
+### Applications of Tree Data Structure
+
+- **File System** : This allows for efficient navigation and organization of files
+- **Database Indexing** : B-trees and other tree structures are used in database indexing to efficiently search for and retrieve data.
+
+### Basic Operations of Tree Data Structure
+
+- **Create** : Create a tree in the data structure
+- **Insert** : Inserts data in a tree
+- **Search** : Searches specific data in a tree to check whether it is present or not
+- **Transversal**
+
+### Binary Search Tree
+
+Each node in a **Binary Search Tree** has at most two children, a **left** child and a **right** child, with the **left** child containing values less than the parent node and the **right** child containing values greater than the parent node. This hierarchical structure allows for efficient **searching**, **insertion**, and **deletion** operations on the data stored in the tree.
+
+![bst-21](https://github.com/user-attachments/assets/819cb1b3-69aa-413f-a9ce-3a9a0fb9699e)
+
+**Binary Search Tree Big O**
+
+- **Search :**
+    - **Best case (Balanced BST):** O(log n)
+    - **Worst case (Unbalanced BST):** O(n)
+- **Insertion**:
+    - **Best case (Balanced BST):** O(log n)
+    - **Worst case (Unbalanced BST):** O(n)
+- **Deletion:**
+    - **Best case (Balanced BST):** O(log n)
+    - **Worst case (Unbalanced BST):** O(n)
+
+> **Worst case**
+> 
+> 
+> In the absolute worst case, a binary tree with `N` elements would be like a linked list.
+> 
+> Hence, there would be `N` levels, and a search would take `N` traversals.
+> 
+> ```
+>       ~ Root ~
+>                                       ____
+>                                      | 42 |
+>                                      |____|
+>                                     /      \
+>                                ____/        \
+>                               | 13 |         X
+>                               |____|
+>                              /      \
+>                         ____/        \
+>                        | 11 |         X
+>                        |____|
+>                       /      \
+>                      /        \
+>                   ...          X
+> ```
+>
+
+
 
 ## Bibliography
 
