@@ -9,6 +9,7 @@ This repo provides resources to learn everything from Big O Notation to common d
 - [Stack](#stack)
 - [Queue](#queue)
 - [Trees](#trees)
+- [Hash Tables](#hash-tables)
 - [Bibliography](#bibliography)
 
 <br>
@@ -410,6 +411,51 @@ Each node in a **Binary Search Tree** has at most two children, a **left** child
 > ```
 >
 
+
+
+## Hash Tables
+
+A hash table (or hash map) is a data structure that allows for fast data retrieval. It maps keys to values using a hash function, which transforms the key into an index in an array where the value is stored. Here's how it works:
+
+- **Keys**: These are unique identifiers (like a person's name).
+- **Hash Function**: This takes a key and converts it into a numerical value (an index in the array).
+- **Values**: These are the pieces of data associated with the keys.
+
+![ComponentsofHashing](https://github.com/user-attachments/assets/5066c0a4-dd2f-4e9b-9fff-06e4639c3c21)
+
+***A hash table is conceptually the same as dictionaries in C#, Java and in other languages.***
+
+### How does a hash table work ?
+
+1. **Hash function**
+    
+    The first step in a hash table is the use of a hash function. It takes a key (which could be any data type) and converts it into an integer, which is called the hash code. 
+    
+    The hash code is then used to determine where to store or find the associated value in an underlying array.
+    
+    Example: Let's say the key is `"apple"`. The hash function might turn `"apple"` into the number`3`.
+    
+2. **Indexing**
+    
+    After the hash function generates a hash code, the next step is to map the hash code to an index in the array.
+    
+    Example: If the array size is 10, you take the hash code `3` and compute `3 % 10`, which results in `3`. This means that the value associated with `"apple"` will be stored at index 3 in the array.
+    
+3. **Storing the value**
+    
+    The value associated with the key is stored in the array at the computed index.
+    
+    Example: Let's say we are storing the value `"fruit"` for the key `"apple"`. After the hash function returns `3`, the value `"fruit"` gets stored in the array at index 3
+    
+4. **Handling collisions**
+    
+    Sometimes, two keys will produce the same hash code or index, which leads to a collision. This can happen because multiple keys might map to the same index. To handle this, hash tables use various techniques:
+    
+    - **Chaining**: Each index in the array holds a linked list (or another structure like a list) of key-value pairs. If multiple keys map to the same index, they are added to this list. During lookup, the correct key is found by traversing this list.
+        
+        Example: If `"apple"` and `"grape"` both map to index 3, a list at index 3 will hold both key-value pairs, and during a lookup, the list is searched for the correct key.
+        
+    - **Open Addressing**: When a collision occurs, the hash table searches for the next available spot in the array using a technique like linear probing (checking the next index) or double hashing (using a secondary hash function to find a new index).
 
 
 ## Bibliography
