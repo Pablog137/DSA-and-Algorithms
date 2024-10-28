@@ -10,6 +10,7 @@ This repo provides resources to learn everything from Big O Notation to common d
 - [Queue](#queue)
 - [Trees](#trees)
 - [Hash Tables](#hash-tables)
+- [Graphs](#graphs)
 - [Bibliography](#bibliography)
 
 <br>
@@ -456,6 +457,26 @@ A hash table (or hash map) is a data structure that allows for fast data retriev
         Example: If `"apple"` and `"grape"` both map to index 3, a list at index 3 will hold both key-value pairs, and during a lookup, the list is searched for the correct key.
         
     - **Open Addressing**: When a collision occurs, the hash table searches for the next available spot in the array using a technique like linear probing (checking the next index) or double hashing (using a secondary hash function to find a new index).
+
+
+
+## Graphs
+
+Graph Data Structure is a collection of nodes connected by edges. It’s used to represent relationships between different entities. Graph algorithms are methods used to manipulate and analyze graphs.
+
+A vertex, also called a node, is a point or an object in the Graph, and an edge is used to connect two vertices with each other.
+
+Graphs are non-linear because the data structure allows us to have different paths to get from one node to another, unlike with linear data structures like Arrays or Linked Lists.
+
+![undirectedgraph](https://github.com/user-attachments/assets/574c7ff1-03e5-40b0-b6ae-d23ae658eee0)
+
+Graphs are used to represent and solve problems where the data consists of objects and relationships between them, such as:
+
+- **Social Networks**: Each person is a vertex, and relationships (like
+friendships) are the edges. Algorithms can suggest potential friends.
+- **Maps and Navigation**: Locations, like a town or bus stops, are
+stored as vertices, and roads are stored as edges. Algorithms can find
+the shortest route between two locations when stored as a Graph.
 
 
 ## Bibliography
